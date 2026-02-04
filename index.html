@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三木易經占卜</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-layout">
+        <!-- 左側：卦象對應表 -->
+        <div class="chart-panel">
+            <h3>六十四卦對應表</h3>
+            <img src="卦象對應.JPG" alt="六十四卦對應表" class="hexagram-chart">
+        </div>
+
+        <!-- 右側：占卜區域 -->
+        <div class="divination-panel">
+            <h1>三木易經占卜</h1>
+
+            <p class="instruction">請在心裡說明自己的姓名、時辰及所想詢問的事情，占出一個易經卦</p>
+
+            <div class="coins-area">
+                <div class="coin" id="coin1">
+                    <div class="coin-inner">
+                        <div class="coin-face coin-front">
+                            <span class="coin-text">正</span>
+                        </div>
+                        <div class="coin-face coin-back">
+                            <span class="coin-text">反</span>
+                        </div>
+                        <div class="coin-edge"></div>
+                    </div>
+                </div>
+                <div class="coin" id="coin2">
+                    <div class="coin-inner">
+                        <div class="coin-face coin-front">
+                            <span class="coin-text">正</span>
+                        </div>
+                        <div class="coin-face coin-back">
+                            <span class="coin-text">反</span>
+                        </div>
+                        <div class="coin-edge"></div>
+                    </div>
+                </div>
+                <div class="coin" id="coin3">
+                    <div class="coin-inner">
+                        <div class="coin-face coin-front">
+                            <span class="coin-text">正</span>
+                        </div>
+                        <div class="coin-face coin-back">
+                            <span class="coin-text">反</span>
+                        </div>
+                        <div class="coin-edge"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="throw-info" id="throwInfo"></div>
+
+            <button class="divine-btn" id="divineBtn">占卜</button>
+
+            <div class="hexagram-area" id="hexagramArea">
+                <div class="line-row" id="line6"><span class="line-label">上爻</span><span class="line-display"></span><span class="line-result"></span></div>
+                <div class="line-row" id="line5"><span class="line-label">五爻</span><span class="line-display"></span><span class="line-result"></span></div>
+                <div class="line-row" id="line4"><span class="line-label">四爻</span><span class="line-display"></span><span class="line-result"></span></div>
+                <div class="line-row" id="line3"><span class="line-label">三爻</span><span class="line-display"></span><span class="line-result"></span></div>
+                <div class="line-row" id="line2"><span class="line-label">二爻</span><span class="line-display"></span><span class="line-result"></span></div>
+                <div class="line-row" id="line1"><span class="line-label">初爻</span><span class="line-display"></span><span class="line-result"></span></div>
+            </div>
+
+            <div class="result-area" id="resultArea"></div>
+        </div>
+    </div>
+
+    <script src="hexagrams.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
