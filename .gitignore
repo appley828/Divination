@@ -1,0 +1,10 @@
+# 忽略所有 Word 文件
+*.docx
+
+# 忽略所有 PNG 圖片
+*.PNG
+*.png
+
+# 忽略系統產生的暫存檔 (選配)
+.DS_Store
+Thumbs.db
